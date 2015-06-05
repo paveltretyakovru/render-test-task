@@ -47,8 +47,13 @@
 
             <h2 class="intro_message">Рендеринг контента с transdir.ru</h2>
             
-            <!-- Header Content / Intro Area Start -->
-            <p>Результат рендеринга</p>                        
+            <!-- Header Content / Intro Area Start -->            
+            <div style="text-align: left">
+                <strong>Серверный рендер:</strong> <br />
+                @foreach ($info as $info_element)
+                    {{ $info_element['desc'] }} : {{ $info_element['value'] }} <br />
+                @endforeach
+            </div>
             <!-- Header Content / Intro Area Start  END -->
 
             <!-- SOCIAL START -->
