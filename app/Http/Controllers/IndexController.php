@@ -9,7 +9,7 @@ use View;
 /**
  * class IndexController 
  * @author Tretyakov Pavel <tretjakov.pavel@gmail.com>
- * @copyright 2015 tretyakovpavel.ru
+ * @copyright 2015 {@link http://tretyakovpavel.ru}
  */
 class IndexController extends Controller
 {

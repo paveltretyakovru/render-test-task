@@ -48,19 +48,18 @@
             <h2 class="intro_message">Рендеринг контента с transdir.ru</h2>
             
             <!-- Header Content / Intro Area Start -->            
-            <div style="text-align: left">
-                <strong>Серверный рендер:</strong> <br />
+            <div style="text-align: left">                
                 @foreach ($info as $info_element)
-                    {{ $info_element['desc'] }} : {{ $info_element['value'] }} <br />
+                    <strong>{{ $info_element['desc'] }}</strong> : {{ $info_element['value'] }} <br />
                 @endforeach
             </div>
             <!-- Header Content / Intro Area Start  END -->
 
             <!-- SOCIAL START -->
             <section class="social">
-                <p><span class="follow-text">Контакты</span>
+                <p>
+                    <a href="https://github.com/ptretyakov/render-test-task" class="github social-link"></a>
                     <a href="mailto:tretjakov.pavel@gmail.com" class="google social-link"></a>
-                    <a href="http://tretyakovpavel.ru" class="github social-link"></a>
                     <a href="http://tretyakovpavel.ru" class="pmc social-link"></a>                    
                 </p>
             </section>
