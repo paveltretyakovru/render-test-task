@@ -13,7 +13,8 @@ return [
 	|
 	*/
 
-	'debug' => env('APP_DEBUG', false),
+	#'debug' => env('APP_DEBUG', false),
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -145,6 +146,11 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		/**
+		 * Новые подключенные модули
+		 */
+		'Yangqi\Htmldom\HtmldomServiceProvider',
+
 	],
 
 	/*
@@ -192,6 +198,11 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+		/**
+		 * Новые, подключенные пространства имен
+		 */
+		'Htmldom' 	=> 'Yangqi\Htmldom\Htmldom' ,
 
 	],
 
